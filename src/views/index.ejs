@@ -1,17 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola Mundo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DATA GARDEN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <link href='https://fonts.googleapis.com/css2?family=Boldonse&display=swap' >
+    <link href='https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap' rel='stylesheet'>
+     
+      
+        
 </head>
 <body>
-    <h1>Hola Mundo</h1>
-    <p>Datos Personales</p>
-    <ul>
-        <li>Cesar Borrego</li>
-        <li>CI : 31971132</li>
-        <li>Seccion 2</li>
-    </ul>
+    <header>
+
+        <h3>DATA GARDEN</h3>
+        <nav>
+          <a href="#descripcion">Descripción</a>
+          <a href="#beneficios">Beneficios</a>
+          <a href="#contacto">Contacto</a>
+          <a href="#redes-sociales">Redes Sociales</a>
+          <a href="#imagenes">Imagenes</a>
+          <a href="#Correoforo">Correo</a>
+      </nav>
+      
+    
+        
+     
+    </header>
+    <main>
+      
+        <div class="text-boxi">
+            <h1>BIENVENIDO A DATA GARDEN</h1>
+            <p>Tu espacio para aprender sobre jardinería y paisajismo.</p>
+            <p>Explora nuestros servicios y descubre cómo transformar tu entorno.</p>
+          </div>
+
+         
+        <section id="descripcion">
+          <div class="text-box2">
+            <h2>JARDINERIA Y PAISAJISMO</h2>
+            <p>La jardinería y el paisajismo son disciplinas dedicadas al diseño, creación y mantenimiento de espacios verdes, integrando naturaleza y estética para realz
+                ar el entorno. Mientras que la jardinería se centra en el cultivo y cuidado de plantas, flores y árboles, el paisajismo va más allá, abarcando la planificación y 
+                estructuración de áreas exteriores como jardines, parques y patios, combinando elementos vegetales con estructuras decorativas como fuentes, caminos o pérgolas. 
+                Ambas actividades no solo embellecen los espacios, sino que también promueven la conexión con la naturaleza, fomentando bienestar y sostenibilidad en los ambientes 
+                que habitamos. ¡Son verdaderas formas de arte viviente! 
+            </p>
+         </div>
+        </section>
+
+        <div class="contenedor">
+          <img src="images/eduqe.jpg" alt="Imagen centrada">
+      </div>
+  
+
+      
+        <section id="beneficios">
+          <div class="text-box2">
+            <h2>Beneficios y Ventajas</h2>
+            <ul>
+                <li>1- Mejoran la calidad de vida: Los espacios verdes ayudan a reducir el estrés, promueven la relajación y fomentan una conexión más profunda con la naturaleza, lo que contribuye al bienestar físico y emocional.
+                
+                </li>
+               
+                <li>2- Aumentan el valor estético y económico: Un diseño paisajístico bien cuidado embellece cualquier entorno y puede incrementar el valor de una propiedad, haciéndola más atractiva y funcional.
+                
+                </li>
+                
+                <li>3- Promueven la sostenibilidad: Al integrar plantas y estructuras naturales, se favorece el equilibrio ecológico, mejorando la calidad del aire y fomentando el uso eficiente de recursos como el agua.
+             
+
+                </li>
+            </ul>
+          </div>
+        </section>
+         
+ 
+   
+   
+  </head>
+  
+    <section id="plantas-comunes">
+      <div class="text-box2">
+      <h2>Plantas Comunes de San Juan de los Morros</h2>
+      <p>Haz clic en los botones para aprender más sobre cada planta:</p>
+      <ul class="plant-list">
+        <li class="plant-item">
+          <h3>Maíz</h3>
+          <button class="show-button" onclick="toggleDetails(this)">Detalles</button>
+          <div class="details">
+            <p>El maíz es un cereal básico en la región, utilizado en diversas preparaciones tradicionales.</p>
+          </div>
+        </li>
+        <li class="plant-item">
+          <h3>Aji Picante</h3>
+          <button class="show-button" onclick="toggleDetails(this)">Detalles</button>
+          <div class="details">
+            <p>El chile, conocido por su sabor picante, es esencial en muchas recetas locales.</p>
+          </div>
+        </li>
+        <li class="plant-item">
+          <h3>Albahaca</h3>
+          <button class="show-button" onclick="toggleDetails(this)">Detalles</button>
+          <div class="details">
+            <p>La albahaca es una hierba aromática ampliamente apreciada en la cocina y medicina natural.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    </section>
+  
+    <script>
+      function toggleDetails(button) {
+        const details = button.nextElementSibling;
+        details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        button.textContent = details.style.display === 'block' ? 'Detalles' : 'Detalles';
+      }
+    </script>
+  
+  
+        <section id="imagenes">
+          <div class="text-box2">
+            <h2>Ideas Economicas</h2>
+            <p><p>Estas son ideas faciles para hacer un poco de jardineria en casa y de bajos costos</p></p>
+          </div>
+            
+            
+           
+            <head>
+             
+              <style>
+                .container {
+                  display: flex;
+                  align-items: center;
+                
+                }
+                .text {
+                  flex: 1;
+                  padding-right: 20px;
+                }
+                .image {
+                  flex: 1;
+                }
+                img {
+                  max-width: 100%;
+                  height: auto;
+                }
+              </style>
+            </head>
+            <body>
+              <section class="container">
+                <div class="text"><!DOCTYPE html>
+                    <html lang="es">
+                    <head>
+                    
+                      <title>Caja de Texto</title>
+                      <style>
+            
+                      </style>
+                    </head>
+                    <body>
+                      <div class="text-box">
+                        <h2>Cartones de Huevo como maseta</h2>
+                        <p><p>Para hacer esto primero debemos tener primero un carton de huevo sin uso, un poco de tierra y la semilla de plantas pequeñas que sean adecuadas de acuerdo en el tamaño del carton</p></p>
+                      </div>
+                    </body>
+                    </html>
+                 
+                  
+                </div>
+                <div class="image">
+                  <img src="https://i.pinimg.com/736x/d2/de/16/d2de1643503d8ec6ae73c46a352bd117.jpg" alt="FOTO DE JARDINERIA" width="600">
+                  
+                </div>
+              </section>
+            </body>
+            </html>
+            
+
+        </section>
+        <section id="imagenes">
+            
+          
+         
+
+          <body>
+            <section class="container">
+              <div class="text"><!DOCTYPE html>
+                  <html lang="es">
+                  <head>
+                  
+                    <title>Caja de Texto</title>
+                    <style>
+          
+                    </style>
+                  </head>
+                  <body>
+                    <div class="text-box">
+                      <h2>Huerta Vertical con Botellas</h2>
+                      <p><p>Primero debemos tener varias botellas y cortar la parte de la tapa con pequeños aguijeros para regar las plantas, el segundo paso seria llenar esta botellas como 1/4 de abono, conectar con las botellas superiores y al final conectar con otro envase en la parte de abajo para terminar el ciclo</p></p>
+                    </div>
+                  </body>
+                  </html>
+               
+                
+              </div>
+              <div class="image">
+                <img src="https://i.pinimg.com/736x/2e/87/9d/2e879dacc97bdc328d0dae046af75ab6.jpg" alt="FOTO DE JARDINERIA" width="1200">
+                
+              </div>
+            </section>
+          </body>
+          </html>
+
+          <section id="imagenes">
+            
+          
+         
+            <head>
+             
+   
+            </head>
+            <body>
+              <section class="container">
+                <div class="text"><!DOCTYPE html>
+                    <html lang="es">
+                    <head>
+                    
+                      <title>VALERIA</title>
+                      <style>
+            
+                      </style>
+                    </head>
+                    <body>
+                      <div class="text-box">
+                        <h2>Latas como masetas</h2>
+                        <p><p>Las latas como masetas sirven como recipiente para almacenar las plantas y reciclar tambien es una excelente forma para crear armonia en la casa ya que las plantas son formas de vida que llenan de energia en cualquier lugar, sirve para planta de pequeños tamaños, cactu, entre otros</p></p>
+                      </div>
+                    </body>
+                    </html>
+                 
+                  
+                </div>
+                <div class="image">
+                  <img src="https://i.pinimg.com/736x/3d/f7/a0/3df7a026d7a0b4dbbc4b6ac153db6d83.jpg" alt="FOTO DE JARDINERIA" width="500">
+                  
+                </div>
+              </section>
+          
+              <section id="Correoforo">
+              <div class="text-box2">
+                <h2>Para Recibir Informacion Sobre Plantas</h2>
+                <p><p>Estas es un forma de seguir recibiendo informacion y actualizaciones sobre nosotros</p></p>
+              </div>
+
+ 
+
+
+    <section class="container">
+  
+    <div class="registro">
+      <h2>Registro para recibir News</h2>
+      <form action="#" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+  
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" required>
+  
+          <label for="correo">Correo Electrónico:</label>
+          <input type="email" id="correo" name="correo" required>
+  
+          <label for="ubicacion">Ubicación:</label>
+          <input type="text" id="ubicacion" name="ubicacion" required>
+  
+          <button type="submit">Registrarse</button>
+      </form>
+  </div>
+  </div>
+</section>
+
+ 
+
+
+</div>
+
+
+  </section>
+
+<body>
+  <section id="imagenes">
+    
+
+  
+
+    
+        <section id="redes-sociales">
+          <div class= "text-box2">
+            <h2>Redes Sociales</h2>
+            <p>Contactanos en nuestras redes sociales</p>
+            <a href="https://www.instagram.com/jardinesconglamour/" target="_blank">Instagram</a>
+            <a href="https://open.spotify.com/playlist/363L0OUgKFbMC8sM4jTkZo?si=ffa45d46f1f74251" target="_blank">Spotify</a>
+            <a href="https://www.facebook.com/jardinesconglamour/" target="_blank">Facebook</a>
+          </div>
+          </section>
+      
+    </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Nombre del Servicio. Todos los derechos reservados - Programacion II </p>
+    </footer>
 </body>
 </html>
