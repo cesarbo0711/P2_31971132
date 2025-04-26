@@ -1,0 +1,372 @@
+body {
+    font-family:  "Boldonse", system-ui;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 20%);
+    background: #dceedc;
+    bottom: unset;
+    h1 {
+
+        font-weight: 700; /* Negrita */
+        color: #000000;
+        text-align: center;
+    }
+    body {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f8ff;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+      
+      }
+      .text {
+        flex: 1;
+        padding-right: 20px;
+      }
+      .image {
+        flex: 1;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .plant-list {
+        list-style: none;
+        padding: 0;
+      }
+      .plant-item {
+        margin: 10px 0;
+      }
+      .details {
+        display: none;
+        margin-top: 5px;
+        color: #555;
+      }
+      .show-button {
+        background-color: #51c060;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+
+      }
+      .show-button:hover {
+        background-color: #51c060;
+        text-align: center;
+      }
+
+      .text-boxi {
+        width: 890px;
+        padding: 300px;
+        background-image: url(images/main2.avif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+
+
+        h1 {
+          .special-gothic-expanded-one-regular {
+            font-family: "Special Gothic Expanded One", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+          }
+          
+                color: whitesmoke
+        }
+
+        p   {
+            
+          font-family: "Boldonse", system-ui;
+          color: whitesmoke
+  }
+
+
+      }
+      .text-box2 {
+
+        width: 1335px;
+        padding: 80px;
+        background-color: #859c67;
+        height: 100%;
+        margin: 0;
+        display: block;
+        justify-content: center; 
+        align-items: center; 
+
+        h2 {
+            
+          
+            font-family: "Special Gothic Expanded One", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+          
+          
+                color: whitesmoke
+        }
+
+        p {
+            
+            font-family: "Boldonse", system-ui;
+            color: whitesmoke
+    }
+
+    li {
+      font-family: "Boldonse", system-ui;
+      text-align: center;
+        font-family: "Boldonse", system-ui;
+        color: whitesmoke
+    }
+
+    a {
+      font-family: "Boldonse", system-ui;
+      text-align: center;
+     color: whitesmoke
+    }
+      }
+
+      .registro {
+        background: #bdd3a0;
+        width: 1335px;
+        padding: 80px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+
+        h2 {
+            
+          
+          font-family: "Special Gothic Expanded One", sans-serif;
+          font-weight: 700;
+          font-style: normal;
+        
+        
+              color: whitesmoke
+      }
+
+      label {
+          
+          font-family: "Boldonse", system-ui;
+          color: whitesmoke
+  }
+    }
+
+    .registro input {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .registro button {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .registro button:hover {
+        background-color: #218838;
+    }
+
+      .text-box {
+        width: 890px;
+        padding: 155px;
+        background-image: url('datannopy.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+        background-color: #b5cdb8a2;
+        color: #333;
+        font-family: Arial, sans-serif;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        
+        h2 {
+        
+            font-family: "Boldonse", system-ui;
+          
+          
+        font-weight: 700; /* Normal */
+        color: #ffffff;
+        text-align: center;
+    }
+
+
+    .text-box4 {
+        width: 890px;
+        padding: 155px;
+        
+        background-image: url('images/lol.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+
+        
+        color: #333;
+        font-family: Arial, sans-serif;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center; }
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('images/5e4342972deec492bc0a10ec3d1f9b65-removebg-preview.png.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .content {
+        color: white;
+        text-align: center;
+        padding: 50px;
+      }
+  
+    .image-container {
+        text-align: center;
+        margin: 20px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+  
+      
+    p {
+        
+        font-family: Boldonse, system-ui;
+      
+      
+    font-weight: 400; /* Normal */
+    color: #ffffff;
+    text-align: center;
+}
+      }
+  
+    h2 {
+        
+            font-family: "Boldonse", system-ui;
+          
+          
+        font-weight: 400; /* Normal */
+        color: #000000;
+        text-align: center;
+    }
+
+    p {
+        
+        font-family: "Boldonse", system-ui;
+      
+      
+    font-weight: 400; /* Normal */
+    color: #000000;
+    text-align: center;
+
+    .contenedor {
+      display: flex;
+      justify-content: center;
+      img {
+        display: block;
+        margin: auto;
+    }
+  
+  }
+
+ 
+
+
+    .plantas-comunes {
+        
+            background-color: #4CAF50; /* Verde */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;           
+            h3 {
+                text-align: center;  
+            }
+        
+    }
+}
+}
+
+header {
+    
+    background: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    h1 {
+
+        font-weight: 700; /* Negrita */
+        color: #ffffff;
+        text-align: center;
+    }
+    
+    h2 {
+        
+            font-family: "Boldonse", system-ui;
+          
+          
+        font-weight: 400; /* Normal */
+        color: #ffffff;
+        text-align: center;
+    }
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    p {
+      color: antiquewhite;
+        margin: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+redes {
+color: whitesmoke
+}
