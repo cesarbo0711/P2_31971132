@@ -1,6 +1,6 @@
 .contacts-container {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  max-width: 100%;
+  max-width: 1000px;
+  width: 80vw;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -22,12 +22,11 @@
   width: 100%;
   border-collapse: collapse;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
   overflow: hidden;
 }
 
 .contacts-table thead tr {
-  background-color: #3498db;
+  background-color:#51c060;
   color: white;
   text-align: left;
 }
@@ -35,6 +34,7 @@
 .contacts-table th,
 .contacts-table td {
   padding: 1rem;
+  text-align: center;
 }
 
 .contacts-table tbody tr {
@@ -46,18 +46,8 @@
   background-color: #f8f9fa;
 }
 
-.contacts-table tbody tr:last-of-type {
-  border-bottom: 2px solid #3498db;
-}
-
 .contacts-table tbody tr:hover {
   background-color: #e3f2fd;
-  transform: translateX(5px);
-}
-
-.contact-email {
-  color: #2980b9;
-  font-weight: 500;
 }
 
 .contact-date {

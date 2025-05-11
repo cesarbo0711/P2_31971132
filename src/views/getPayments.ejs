@@ -39,20 +39,19 @@
 <body>
     <div class="contacts-container">
         <div class="contacts-header">
-            <h1 class="contacts-title">Registros de Pagos <i class="fas fa-credit-card"></i></h1>
-            <span>Total:<%=datePayments.length%></span>
+            <h1 class="contacts-title">Listado de Pagos </h1>
+            <span>Cant. Pagos:<%=datePayments.length%></span>
         </div>
-
         <% if (datePayments.length > 0) { %>
             <table class="contacts-table">
                 <thead>
                     <tr>
                         <th>Titular</th>
-                        <th>Correo</th>
-                        <th>Tarjeta</th>
-                        <th>Expiración</th>
+                        <th>Email</th>
+                        <th>Cod de Tarjeta</th>
+                        <th>Vencimiento</th>
                         <th>Moneda</th>
-                        <th>Monto</th>
+                        <th>Cantidad</th>
                         <th>Fecha</th>
                     </tr>
                 </thead>
