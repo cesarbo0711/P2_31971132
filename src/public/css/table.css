@@ -1,3 +1,46 @@
+.text-boxpi3 {
+
+        width: 100vw;
+        background-color: #e69a53;
+        height: 100%;
+        margin-bottom: 41px;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column;
+        padding-bottom: 10px;
+
+        h2{
+            
+          
+            font-family: "Special Gothic Expanded One", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+          
+          
+                color: whitesmoke
+        }
+
+        p {
+            
+            font-family: "Boldonse", system-ui;
+            color: whitesmoke
+    }
+
+    li {
+      font-family: "Boldonse", system-ui;
+      text-align: center;
+        font-family: "Boldonse", system-ui;
+        color: whitesmoke
+    }
+
+    a {
+      font-family: "Boldonse", system-ui;
+      text-align: center;
+     color: whitesmoke
+    }
+      }
+
 .contacts-container {
   max-width: 1000px;
   width: 80vw;

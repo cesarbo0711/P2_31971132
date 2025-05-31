@@ -78,7 +78,7 @@ body {
         align-items: center;
         width: 100vw;
         height: calc(100vh - 160px);
-        background-image: url(images/main2.avif);
+        background-image: url(../images/main2.avif);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

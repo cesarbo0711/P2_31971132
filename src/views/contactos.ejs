@@ -45,5 +45,72 @@
             <p>No hay registros de contactos disponibles.</p>
         <% } %>
     </div>
+
+    <div class="text-boxpi3">
+<div class="container">
+        <h2>Geolocalización por IP      : </h2>
+        <p>Obteniendo tu ubicación...</p>
+        <div id="location-info" style="display: none;">
+            <h2>Información de Ubicación</h2>
+            <p class="info-item"><strong>IP:</strong> <span id="ip"></span></p>
+            <p class="info-item"><strong>País:</strong> <span id="country"></span></p>
+            <p class="info-item"><strong>Código de País:</strong> <span id="countryCode"></span></p>
+            <p class="info-item"><strong>Región:</strong> <span id="regionName"></span></p>
+            <p class="info-item"><strong>Ciudad:</strong> <span id="city"></span></p>
+            <p class="info-item"><strong>Latitud:</strong> <span id="latitude"></span></p>
+            <p class="info-item"><strong>Longitud:</strong> <span id="longitude"></span></p>
+            <p class="info-item"><strong>Zona Horaria:</strong> <span id="timezone"></span></p>
+            <p class="info-item"><strong>Código Postal:</strong> <span id="zip"></span></p>
+        </div>
+        <div id="error-container" class="error-message" style="display: none;"></div>
+    </div>
+
+    <script>
+        function obtenerGeolocalizacionPorIP() {
+            fetch('http://ip-api.com/json') // La API gratuita de ip-api.com
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Datos de geolocalización:', data);
+                    if (data.status === 'success') {
+                        document.getElementById('location-info').style.display = 'block';
+                        document.querySelector('.container > p').style.display = 'none'; // Ocultar "Obteniendo tu ubicación..."
+                        document.getElementById('ip').textContent = data.query;
+                        document.getElementById('country').textContent = data.country;
+                        document.getElementById('countryCode').textContent = data.countryCode;
+                        document.getElementById('regionName').textContent = data.regionName;
+                        document.getElementById('city').textContent = data.city;
+                        document.getElementById('latitude').textContent = data.lat;
+                        document.getElementById('longitude').textContent = data.lon;
+                        document.getElementById('timezone').textContent = data.timezone;
+                        document.getElementById('zip').textContent = data.zip;
+                        document.getElementById('error-container').style.display = 'none';
+
+
+                    } else {
+                        document.getElementById('error-container').textContent = `Error al obtener la geolocalización: ${data.message}`;
+                        document.getElementById('error-container').style.display = 'block';
+                        document.querySelector('.container > p').textContent = 'Error al obtener la ubicación.';
+                        document.getElementById('location-info').style.display = 'none';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error en la petición:', error);
+                    document.getElementById('error-container').textContent = 'Ocurrió un error al intentar obtener la ubicación.';
+                    document.getElementById('error-container').style.display = 'block';
+                    document.querySelector('.container > p').textContent = 'Error al obtener la ubicación.';
+                    document.getElementById('location-info').style.display = 'none';
+                });
+        }
+
+        
+        // Llamar a la función cuando la página se carga
+        window.onload = obtenerGeolocalizacionPorIP;
+</script>
+
 </body>
 </html>
