@@ -10,9 +10,14 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-    res.render('index');
+    res.render('index', { title: 'Inicio' });
 });
 
+app.get('/otraRuta', (req, res) => {
+    res.render('otraruta');
+});
+
+
 app.listen(port, () => {
-    console.log(`Servidor en http://localhost:${port}`);
+    console.log(`Servidor Papito en http://localhost:${port}`);
 });

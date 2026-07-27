@@ -3,315 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>DATA GARDEN</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>César Borrego | Desarrollador Full-Stack</title>
+    <link rel="shortcut icon" href="src/public/images/logo.ico" />
     <link rel="stylesheet" href="styles.css">
-    
-    <link href='https://fonts.googleapis.com/css2?family=Boldonse&display=swap' >
-    <link href='https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap' rel='stylesheet'>
-     
-      
-        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
 
-        <h3>DATA GARDEN</h3>
-        <nav>
-          <a href="#descripcion">Descripción</a>
-          <a href="#beneficios">Beneficios</a>
-          <a href="#contacto">Contacto</a>
-          <a href="#redes-sociales">Redes Sociales</a>
-          <a href="#imagenes">Imagenes</a>
-          <a href="#Correoforo">Correo</a>
-      </nav>
-      
-    
+<body>
+    <div class="contenedor-principal">
         
-     
-    </header>
-    <main>
-      
-        <div class="text-boxi">
-            <h1>BIENVENIDO A DATA GARDEN</h1>
-            <p>Tu espacio para aprender sobre jardinería y paisajismo.</p>
-            <p>Explora nuestros servicios y descubre cómo transformar tu entorno.</p>
-          </div>
-
-         
-        <section id="descripcion">
-          <div class="text-box2">
-            <h2>JARDINERIA Y PAISAJISMO</h2>
-            <p>La jardinería y el paisajismo son disciplinas dedicadas al diseño, creación y mantenimiento de espacios verdes, integrando naturaleza y estética para realz
-                ar el entorno. Mientras que la jardinería se centra en el cultivo y cuidado de plantas, flores y árboles, el paisajismo va más allá, abarcando la planificación y 
-                estructuración de áreas exteriores como jardines, parques y patios, combinando elementos vegetales con estructuras decorativas como fuentes, caminos o pérgolas. 
-                Ambas actividades no solo embellecen los espacios, sino que también promueven la conexión con la naturaleza, fomentando bienestar y sostenibilidad en los ambientes 
-                que habitamos. ¡Son verdaderas formas de arte viviente! 
-            </p>
-         </div>
-        </section>
-
-        <div class="contenedor">
-          <img src="images/eduqe.jpg" alt="Imagen centrada">
-      </div>
-  
-
-      
-        <section id="beneficios">
-          <div class="text-box2">
-            <h2>Beneficios y Ventajas</h2>
-            <ul>
-                <li>1- Mejoran la calidad de vida: Los espacios verdes ayudan a reducir el estrés, promueven la relajación y fomentan una conexión más profunda con la naturaleza, lo que contribuye al bienestar físico y emocional.
-                
-                </li>
-               
-                <li>2- Aumentan el valor estético y económico: Un diseño paisajístico bien cuidado embellece cualquier entorno y puede incrementar el valor de una propiedad, haciéndola más atractiva y funcional.
-                
-                </li>
-                
-                <li>3- Promueven la sostenibilidad: Al integrar plantas y estructuras naturales, se favorece el equilibrio ecológico, mejorando la calidad del aire y fomentando el uso eficiente de recursos como el agua.
-             
-
-                </li>
-            </ul>
-          </div>
-        </section>
-         
- 
-   
-   
-  </head>
-  
-    <section id="plantas-comunes">
-      <div class="text-box2">
-      <h2>Plantas Comunes de San Juan de los Morros</h2>
-      <p>Haz clic en los botones para aprender más sobre cada planta:</p>
-      <ul class="plant-list">
-        <li class="plant-item">
-          <h3>Maíz</h3>
-          <button class="show-button" onclick="toggleDetails(this)">Detalles</button>
-          <div class="details">
-            <p>El maíz es un cereal básico en la región, utilizado en diversas preparaciones tradicionales.</p>
-          </div>
-        </li>
-        <li class="plant-item">
-          <h3>Aji Picante</h3>
-          <button class="show-button" onclick="toggleDetails(this)">Detalles</button>
-          <div class="details">
-            <p>El chile, conocido por su sabor picante, es esencial en muchas recetas locales.</p>
-          </div>
-        </li>
-        <li class="plant-item">
-          <h3>Albahaca</h3>
-          <button class="show-button" onclick="toggleDetails(this)">Detalles</button>
-          <div class="details">
-            <p>La albahaca es una hierba aromática ampliamente apreciada en la cocina y medicina natural.</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-    </section>
-  
-    <script>
-      function toggleDetails(button) {
-        const details = button.nextElementSibling;
-        details.style.display = details.style.display === 'block' ? 'none' : 'block';
-        button.textContent = details.style.display === 'block' ? 'Detalles' : 'Detalles';
-      }
-    </script>
-  
-  
-        <section id="imagenes">
-          <div class="text-box2">
-            <h2>Ideas Economicas</h2>
-            <p><p>Estas son ideas faciles para hacer un poco de jardineria en casa y de bajos costos</p></p>
-          </div>
+        <!-- COLUMNA IZQUIERDA (PERFIL) -->
+        <div class="contenedor-izquierda">
+            <div class="mi-cuadro-con-transform">
+                <img src="/images/caraaaa.png" alt="César Borrego Avatar">
+            </div>
             
-            
-           
-            <head>
-             
-              <style>
-                .container {
-                  display: flex;
-                  align-items: center;
-                
-                }
-                .text {
-                  flex: 1;
-                  padding-right: 20px;
-                }
-                .image {
-                  flex: 1;
-                }
-                img {
-                  max-width: 100%;
-                  height: auto;
-                }
-              </style>
-            </head>
-            <body>
-              <section class="container">
-                <div class="text"><!DOCTYPE html>
-                    <html lang="es">
-                    <head>
-                    
-                      <title>Caja de Texto</title>
-                      <style>
-            
-                      </style>
-                    </head>
-                    <body>
-                      <div class="text-box">
-                        <h2>Cartones de Huevo como maseta</h2>
-                        <p><p>Para hacer esto primero debemos tener primero un carton de huevo sin uso, un poco de tierra y la semilla de plantas pequeñas que sean adecuadas de acuerdo en el tamaño del carton</p></p>
-                      </div>
-                    </body>
-                    </html>
-                 
-                  
+            <div class="textContenedor">
+                <h3>César Borrego</h3>
+                <div class="box">
+                    <!-- ADIÓS JUNIOR, HOLA FULL-STACK -->
+                    <p>Desarrollador Web Full-Stack | React & Node.js | Base de Datos</p>
                 </div>
-                <div class="image">
-                  <img src="https://i.pinimg.com/736x/d2/de/16/d2de1643503d8ec6ae73c46a352bd117.jpg" alt="FOTO DE JARDINERIA" width="600">
-                  
-                </div>
-              </section>
-            </body>
-            </html>
-            
-
-        </section>
-        <section id="imagenes">
-            
-          
-         
-
-          <body>
-            <section class="container">
-              <div class="text"><!DOCTYPE html>
-                  <html lang="es">
-                  <head>
-                  
-                    <title>Caja de Texto</title>
-                    <style>
-          
-                    </style>
-                  </head>
-                  <body>
-                    <div class="text-box">
-                      <h2>Huerta Vertical con Botellas</h2>
-                      <p><p>Primero debemos tener varias botellas y cortar la parte de la tapa con pequeños aguijeros para regar las plantas, el segundo paso seria llenar esta botellas como 1/4 de abono, conectar con las botellas superiores y al final conectar con otro envase en la parte de abajo para terminar el ciclo</p></p>
+                <h3>──────────────────</h3>
+                
+                <div class="contenedor-flex-padresito">
+                    <div class="box-izquierda">
+                        <div class="circulo-img"><img src="/images/icon-email.png" alt="Email"></div>
                     </div>
-                  </body>
-                  </html>
-               
+                    <div class="box-derecha">
+                        <h2>Email</h2>
+                        <h2>ceborregofi@gmail.com</h2>
+                    </div>
+                </div>
                 
-              </div>
-              <div class="image">
-                <img src="https://i.pinimg.com/736x/2e/87/9d/2e879dacc97bdc328d0dae046af75ab6.jpg" alt="FOTO DE JARDINERIA" width="1200">
+                <div class="contenedor-flex-padresito">
+                    <div class="box-izquierda">
+                        <div class="circulo-img"><img src="/images/icon-tlf.png" alt="Teléfono"></div>
+                    </div>
+                    <div class="box-derecha">
+                        <h2>Teléfono</h2>
+                        <h2>+ 58 (412) 545-0793</h2>
+                    </div>
+                </div>
                 
-              </div>
+                <div class="contenedor-flex-padresito">
+                    <div class="box-izquierda">
+                        <div class="circulo-img"><img src="/images/icon-calendario.png" alt="Nacimiento"></div>
+                    </div>
+                    <div class="box-derecha">
+                        <h2>Nacimiento</h2>
+                        <h2>07 de Nov 2006</h2>
+                    </div>
+                </div>
+                
+                <div class="contenedor-flex-padresito">
+                    <div class="box-izquierda">
+                        <div class="circulo-img"><img src="/images/icon-ubi.png" alt="Ubicación"></div>
+                    </div>
+                    <div class="box-derecha">
+                        <h2>Localidad</h2>
+                        <h2>SJM, Guárico</h2>
+                    </div>
+                </div>
+
+                <!-- SECCIÓN FORMULARIO (Se mantiene tu lógica) -->
+                <div class="box" style="margin-top: 25px; text-align: left; padding: 15px;">
+                    <h2 style="color: #fefefe; font-size: 15px; margin-bottom: 10px; font-weight: bold;">Tech Stack</h2>
+                    <p style="font-size: 13px; line-height: 1.6; color: #a9a9a9;">
+                        JavaScript, React, Node.js, Express, Supabase, PostgreSQL, n8n, Git, SAP ABAP Cloud / Fiori.
+                    </p>
+                </div>
+
+                <!-- NUEVO: REDES / PERFILES -->
+                <div class="box" style="margin-top: 15px; text-align: left; padding: 15px;">
+                    <h2 style="color: #fefefe; font-size: 15px; margin-bottom: 10px; font-weight: bold;">Perfiles</h2>
+                    <div style="display: flex; gap: 10px; flex-direction: column;">
+                        <a href="https://github.com/cesarbo0711" target="_blank" style="color: #efd684; text-decoration: none; font-size: 14px;">💻 GitHub /cesarbo0711</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLUMNA DERECHA (CONTENIDO PRINCIPAL) -->
+        <div class="contenedor-derecha">
+            <div class="contenedor-flex-padre">
+                <div class="text-izquierda">
+                    <h2>Sobre Mí</h2>
+                    <div class="cuadro"></div>
+                </div>
+                <div class="text-derecha">
+                    <nav>
+                        <a href="#sobreMi">Sobre Mí</a>
+                        <a href="#resumen">Resumen</a>
+                        <a href="#portafolio">Portafolio</a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- SECCIÓN SOBRE MÍ CON EL TEXTO POTENCIADO -->
+            <section id="sobreMi">
+                <p>Soy estudiante de 7mo semestre de Ingeniería en Informática enfocado en el desarrollo web Full-Stack. Me especializo en construir aplicaciones dinámicas y escalables utilizando el ecosistema JavaScript (React, Node.js, Express) y bases de datos relacionales como PostgreSQL (Supabase).</p>
+                
+                <p>No me quedo solo en la teoría; me apasiona ensuciarme las manos con código para resolver problemas reales. Tengo experiencia práctica implementando seguridad a nivel de datos (RLS), consumiendo REST APIs y creando flujos automatizados de trabajo en tiempo real con herramientas como n8n y Webhooks.</p>
+                
+                <p>Actualmente busco integrarme a un equipo de desarrollo de alto nivel donde pueda aportar valor desde el día uno, demostrar mi lógica algorítmica y absorber todo el conocimiento posible para seguir evolucionando como ingeniero de software.</p>
+                
+                <h2 style="margin-top: 30px;">Qué Estoy Haciendo</h2>
+
+                <!-- TARJETA 1: DESARROLLO WEB -->
+                <div class="boxito">
+                    <div class="izquierdita">
+                        <div class="img"><img src="/images/icon-laptop.png" alt="Dev"></div>
+                    </div>
+                    <div class="derechita">
+                        <h2>Desarrollo de Aplicaciones Web</h2>
+                        <p>Construcción de sistemas Full-Stack interactivos, multiusuario y responsivos utilizando React, Node.js y Tailwind CSS.</p>
+                    </div>
+                </div>
+
+                <!-- TARJETA 2: AUTOMATIZACIÓN Y BD (Reemplazo de edición de video) -->
+                 <section id="resumen">
+                <div class="boxito">
+                    <div class="izquierdita">
+                        <div class="img"><img src="/images/icon-video.png" alt="Automatización"></div>
+                    </div>
+                    <div class="derechita">
+                        <h2>Automatización & Bases de Datos</h2>
+                        <p>Diseño de bases de datos seguras (RLS en Supabase) y creación de alertas automatizadas en tiempo real con n8n y Telegram API.</p>
+                    </div>
+                </div>
+                
+                <!-- TARJETA 3: ESTUDIOS -->
+                <div class="boxito">
+                    <div class="izquierdita">
+                        <div class="img"><img src="/images/icon-libro.png" alt="Estudio"></div>
+                    </div>
+                    <div class="derechita">
+                        <h2>Ingeniería en Informática</h2>
+                        <p>Cursando el 7mo semestre en la UNERG (San Juan de los Morros), consolidando bases sólidas en lógica y arquitectura de software.</p>
+                        
+                    </div>
+                </div>
             </section>
-          </body>
-          </html>
 
-          <section id="imagenes">
             
-          
-         
-            <head>
-             
-   
-            </head>
-            <body>
-              <section class="container">
-                <div class="text"><!DOCTYPE html>
-                    <html lang="es">
-                    <head>
+
+            <!-- SECCIÓN PORTAFOLIO CORREGIDA -->
+            <section id="portafolio">
+                <h2>Portafolio</h2>
+                <div class="portafolio-caja" style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
                     
-                      <title>VALERIA</title>
-                      <style>
+                    <!-- PROYECTO 1: FLUO -->
+                    <div class="portafolio-item" style="background: #1a1a1a; padding: 20px; border-radius: 10px; flex: 1; min-width: 250px;">
+                        <img src="/images/icono-appas.png" alt="FLUO App" style="width: 100%; border-radius: 5px;">
+                        <h3 style="color: white; margin-top: 15px;">FLUO - Sistema de Inventario</h3>
+                        <p style="color: #ccc; font-size: 14px;">App web Full-Stack (React, Supabase, Node.js). Gestión multiusuario con RLS y alertas en vivo a Telegram usando n8n y Webhooks.</p>
+                        <a href="https://sistema-admin-cliente.vercel.app/" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+                    </div>
+
+
+                    <div class="portafolio-item" style="background: #1a1a1a; padding: 20px; border-radius: 10px; flex: 1; min-width: 250px;">
+                        <img src="/images/portafolio3.png" alt="Gestor de Libros SAP Fiori Elements" style="width: 100%; border-radius: 5px;">
+                        <h3 style="color: white; margin-top: 15px;">Sistema Control Académico</h3>
+                        <p style="color: #ccc; font-size: 14px;">Aplicación empresarial desarrollada sobre SAP BTP utilizando ABAP Cloud y Fiori Elements (SAP RAP). Interfaz de usuario adaptativa para gestión de inventario y catálogos con visualización de datos en tiempo real.</p>
+                        <a href="https://github.com/cesarbo0711/abap_scp_cb" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+                    </div>
+
+
+                </div>
+            </section>
             
-                      </style>
-                    </head>
-                    <body>
-                      <div class="text-box">
-                        <h2>Latas como masetas</h2>
-                        <p><p>Las latas como masetas sirven como recipiente para almacenar las plantas y reciclar tambien es una excelente forma para crear armonia en la casa ya que las plantas son formas de vida que llenan de energia en cualquier lugar, sirve para planta de pequeños tamaños, cactu, entre otros</p></p>
-                      </div>
-                    </body>
-                    </html>
-                 
-                  
-                </div>
-                <div class="image">
-                  <img src="https://i.pinimg.com/736x/3d/f7/a0/3df7a026d7a0b4dbbc4b6ac153db6d83.jpg" alt="FOTO DE JARDINERIA" width="500">
-                  
-                </div>
-              </section>
-          
-              <section id="Correoforo">
-              <div class="text-box2">
-                <h2>Para Recibir Informacion Sobre Plantas</h2>
-                <p><p>Estas es un forma de seguir recibiendo informacion y actualizaciones sobre nosotros</p></p>
-              </div>
-
- 
-
-
-    <section class="container">
-  
-    <div class="registro">
-      <h2>Registro para recibir News</h2>
-      <form action="#" method="post">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required>
-  
-          <label for="apellido">Apellido:</label>
-          <input type="text" id="apellido" name="apellido" required>
-  
-          <label for="correo">Correo Electrónico:</label>
-          <input type="email" id="correo" name="correo" required>
-  
-          <label for="ubicacion">Ubicación:</label>
-          <input type="text" id="ubicacion" name="ubicacion" required>
-  
-          <button type="submit">Registrarse</button>
-      </form>
-  </div>
-  </div>
-</section>
-
- 
-
-
-</div>
-
-
-  </section>
-
-<body>
-  <section id="imagenes">
-    
-
-  
-
-    
-        <section id="redes-sociales">
-          <div class= "text-box2">
-            <h2>Redes Sociales</h2>
-            <p>Contactanos en nuestras redes sociales</p>
-            <a href="https://www.instagram.com/jardinesconglamour/" target="_blank">Instagram</a>
-            <a href="https://open.spotify.com/playlist/363L0OUgKFbMC8sM4jTkZo?si=ffa45d46f1f74251" target="_blank">Spotify</a>
-            <a href="https://www.facebook.com/jardinesconglamour/" target="_blank">Facebook</a>
-          </div>
-          </section>
-      
+        </div>
     </div>
-    </main>
-    <footer>
-        <p>&copy; 2025 Nombre del Servicio. Todos los derechos reservados - Programacion II </p>
-    </footer>
+
+    <!-- SCRIPT DE CONTACTO CORREGIDO (MOVIDO DENTRO DEL BODY) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('contact-form');
+            const contactList = document.getElementById('contact-list');
+
+            const fetchContacts = async () => {
+                if(!contactList) return;
+                contactList.innerHTML = '<p class="text-gray-500 text-center">Cargando contactos...</p>';
+                try {
+                    const response = await fetch('/api/contactos');
+                    const data = await response.json();
+                    if (data.success) {
+                        renderContacts(data.contactos);
+                    } else {
+                        contactList.innerHTML = `<p class="text-red-500 text-center">${data.message}</p>`;
+                    }
+                } catch (error) {
+                    console.error('Error al cargar los contactos:', error);
+                    contactList.innerHTML = '<p class="text-red-500 text-center">Error de red.</p>';
+                }
+            };
+
+            const renderContacts = (contactos) => {
+                if(!contactList) return;
+                if (contactos.length === 0) {
+                    contactList.innerHTML = '<p class="text-gray-500 text-center">Aún no hay contactos.</p>';
+                } else {
+                    contactList.innerHTML = ''; 
+                    contactos.forEach(contacto => {
+                        const contactCard = document.createElement('div');
+                        contactCard.className = 'bg-white p-4 rounded-md shadow';
+                        contactCard.innerHTML = `
+                            <p class="font-bold text-gray-800">${contacto.nombre}</p>
+                            <p class="text-sm text-gray-500">${contacto.correo}</p>
+                            <p class="mt-2 text-gray-600">${contacto.mensaje}</p>
+                        `;
+                        contactList.appendChild(contactCard);
+                    });
+                }
+            };
+
+            if(form) {
+                form.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    const formData = new FormData(form);
+                    const data = Object.fromEntries(formData.entries());
+
+                    try {
+                        const response = await fetch('/enviar-mensaje', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                            body: new URLSearchParams(data).toString()
+                        });
+                        const result = await response.json();
+                        if (result.success) {
+                            form.reset();
+                            fetchContacts();
+                        } else {
+                            console.error('Error:', result.message);
+                        }
+                    } catch (error) {
+                        console.error('Error de red:', error);
+                    }
+                });
+            }
+            fetchContacts();
+        });
+    </script>
 </body>
 </html>
